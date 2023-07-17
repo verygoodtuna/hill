@@ -1,0 +1,21 @@
+.main_door {
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+
+    .door01 {
+        background: url(../imges/md_01.jpg)no-repeat center center/cover;
+        height: 100vh;
+    }
+
+    .door02 {
+        background: url(../imges/md_02.jpg)no-repeat center center/cover;
+        height: 100vh;
+    }
+
+    .tit {
+        @include position_center();
+        top: 30%;
+        z-index: 998;
+    }
+}
