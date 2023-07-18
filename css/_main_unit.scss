@@ -1,0 +1,44 @@
+.main_unit {
+    background: url(../imges/mu_bg.jpg)no-repeat center center;
+    padding: 250px 0;
+    position: relative;
+
+    .inner {
+        // @include position_center();
+        // @include inner();
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        //overflow: hidden;
+
+
+        .unit_slide {
+
+            .swiper-wrapper {
+                
+
+                .swiper-slide {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    //overflow: hidden;
+                }
+
+                 // .unit01 {
+                //     background: url(../imges/mu_01.jpg)no-repeat center center/cover;
+                 // }
+                // .unit02 {
+                //     background: url(../imges/mu_02.jpg)no-repeat center center/cover;
+                // }
+                // .unit03 {
+                //     background: url(../imges/mu_03.jpg)no-repeat center center/cover;
+                // }
+                // .unit04 {
+                //     background: url(../imges/mu_04.jpg)no-repeat center center/cover;
+                // }
+            }
+        }
+    }
+}
