@@ -1,0 +1,48 @@
+.footer {
+    padding: 50px 0;
+
+    .inner {
+
+        .f_logo {
+            text-align: center;
+            margin: 0 0 30px 0;
+        }
+
+        .f_coo {
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                margin: 0 0 30px 0;
+
+                li {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 14px;
+
+                    img {
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+
+        .f_copy {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 400;
+
+            span {
+                display: block;
+                margin: 0 0 5px 0;
+                color: $color-lgray;
+            }
+
+            strong {
+                color: $color-lgray;
+                font-weight: 700;
+            }
+        }
+    }
+}

@@ -10,26 +10,19 @@ $(function () {
         loop: true,
     });
 
-    const PremiumSlide = new Swiper ('.premium8_slide', {
-        loop: true,
-        //freeMode: true,
-        spaceBetween: 30,
-        slidesPerView: 4,
-        slidesPerGroup: 4,
-        
-    });
+    $('.premium8_slide').slick ({
+        arrows:false,
+        slidesToShow: 4,
+        slideScroll: 4,
+        autoplay: true,
+        autoSpeed: 2000,
+        infinite: true,
+    })
 
-    const UnitSlide = new Swiper ('.unit_slide', {
-        loop: true,
-        slidesPerView: '3',
-        slidesPerGroup: '3',
-        spaceBetween: 15,
-        // pagination: {
-        //     el: ".swiper-pagination",
-        //     clickable: true,
-        //   },
-        loopAdditionalSlides : 1,
-        freeMode : false,
-        autoHeight : true,
+    $('.unit_slide').slick ({
+        arrows: false,
+        slidesToShow: 3,
+        infinite: true,
+        autoplay: true,
     })
 })

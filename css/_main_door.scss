@@ -15,7 +15,38 @@
 
     .tit {
         @include position_center();
-        top: 30%;
+        top: 250px;
         z-index: 998;
+
+        p {
+            font-size: 22px;
+            font-weight: 400;
+            margin: 0 0 10px 0;
+
+            strong {
+                color: $color-red;
+            }
+
+            span {
+                color: $color-red;
+                font-style: italic;
+                font-size: 25px;
+                font-weight: 400;
+                margin: 0 5px 0 0;
+            }
+        }
+
+        h2 {
+            font-size: 60px;
+            font-weight: 700;
+            color: $color-red;
+            margin: 0 0 15px 0;
+        }
+
+        span {
+            font-size: 14px;
+            font-weight: 300;
+            color: $color-dgray;
+        }
     }
 }

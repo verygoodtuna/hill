@@ -1,9 +1,45 @@
 .main_premium8 {
     background: url(../imges/mp_bg.png)no-repeat center center/cover;
     background-color: $color-bg-dark;
+    padding: 150px 0;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 55.3%;
+        left: 50%;
+
+        width: 1px;
+        height: 100px;
+        background: $color-dgray;
+    }
     
     .inner {
         overflow: hidden;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 60%;
+            left: 25%;
+
+            width: 1px;
+            height: 100px;
+            background: $color-dgray;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 60%;
+            right: 25%;
+
+            width: 1px;
+            height: 100px;
+            background: $color-dgray;
+        }
 
         .tit {
             margin: 0 0 80px 0;
@@ -23,14 +59,14 @@
         }
         .premium8_slide {
             cursor: pointer;
-            .swiper-wrapper {
-                transition-timing-function: linear;
-                .swiper-slide {
+
+                .p_slide {
                     width: 296.5px;
                     text-align: center;
-
+                    
                     img {
-                        margin: 0 0 15px 0;
+                        margin: 0 auto 15px auto;
+                        cursor: pointer;
                     }
 
                     .txt {
@@ -50,7 +86,6 @@
                     }
                     
                 }
-            }
         }
         
     }
