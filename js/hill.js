@@ -17,6 +17,24 @@ $(function () {
         autoplay: true,
         autoSpeed: 2000,
         infinite: true,
+
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  infinite: true,
+                }
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                }
+            }
+        ]
     })
 
     $('.unit_slide').slick ({
@@ -24,5 +42,23 @@ $(function () {
         slidesToShow: 3,
         infinite: true,
         autoplay: true,
+
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                  infinite: true,
+                }
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                }
+            }
+        ]
     })
 })

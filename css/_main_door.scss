@@ -17,6 +17,7 @@
         @include position_center();
         top: 250px;
         z-index: 998;
+        white-space: nowrap;
 
         p {
             font-size: 22px;
@@ -47,6 +48,26 @@
             font-size: 14px;
             font-weight: 300;
             color: $color-dgray;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main_door {
+
+        .tit {
+
+            p {
+                font-size: 16px;
+
+                span {
+                    font-size: 20px;
+                }
+            }
+
+            h2 {
+                font-size: 40px;
+            }
         }
     }
 }
