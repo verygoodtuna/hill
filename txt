@@ -4,6 +4,9 @@ gray #efebdd
 dgray #7e7e7e
 bg-dark #4d4a43
 
+@media (max-width: 1024px)
+@media (max-width: 768px)
+
 header)
 사업안내---
 사업개요

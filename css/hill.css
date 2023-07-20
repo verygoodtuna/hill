@@ -329,8 +329,51 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .header {
+    background: #fff;
+  }
   .header .inner .gnb {
     display: none;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    padding: 50px 20px 0 20px;
+  }
+  .header .inner .gnb::before {
+    width: 0;
+  }
+  .header .inner .gnb:hover::before {
+    height: 0;
+  }
+  .header .inner .gnb ul {
+    flex-direction: column;
+    gap: 0;
+    text-align: left;
+  }
+  .header .inner .gnb ul li .gnb_list {
+    line-height: 50px;
+  }
+  .header .inner .gnb ul li .gnb_list::after {
+    display: none;
+  }
+  .header .inner .gnb ul li .lnb {
+    position: static;
+    transform: translate(0, 0);
+    display: none;
+    transition: 0.5s;
+  }
+  .header .inner .gnb ul li .lnb li {
+    line-height: 20px;
+    text-align: left;
+  }
+  .header .inner .gnb ul li .lnb.on {
+    display: block;
+  }
+  .header .inner .gnb.on {
+    display: block;
   }
   .header .inner .num {
     display: none;
@@ -386,14 +429,20 @@ body {
 }
 
 @media (max-width: 768px) {
-  .main_door .txt p {
-    font-size: 16px;
+  .main_door .tit {
+    top: 200px;
   }
-  .main_door .txt p span {
+  .main_door .tit p {
+    font-size: 14px;
+  }
+  .main_door .tit p span {
     font-size: 20px;
   }
-  .main_door h2 {
-    font-size: 40px;
+  .main_door .tit h2 {
+    font-size: 30px;
+  }
+  .main_door .tit span {
+    font-size: 1.5vw;
   }
 }
 .main_premium8 {
@@ -528,15 +577,25 @@ body {
   overflow: hidden;
 }
 .main_unit .inner .unit_slide .u_slide {
-  padding: 15px;
+  padding: 0 15px;
 }
+
 @media (max-width: 1024px) {
   .main_unit .inner {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main_unit .inner .unit_plan {
+    grid-column: 1/3;
   }
   .main_unit .inner .unit_slide {
-    grid-column: 2/4;
+    grid-column: 3/5;
+  }
+  .main_unit .inner .unit_slide .u_slide {
+    padding: 0 15px;
+  }
+  .main_unit .inner .unit_slide .u_slide img {
+    height: 100%;
   }
 }
 .footer {
@@ -574,4 +633,18 @@ body {
 .footer .inner .f_copy strong {
   color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .footer .inner .f_logo {
+    text-align: left;
+  }
+  .footer .inner .f_coo ul {
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+  }
+  .footer .inner .f_copy {
+    text-align: left;
+  }
 }/*# sourceMappingURL=hill.css.map */

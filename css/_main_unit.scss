@@ -65,7 +65,7 @@
             overflow: hidden;
 
             .u_slide {
-                padding: 15px;
+                padding: 0 15px;
                 //width: 244px;
             }
         }
@@ -77,11 +77,27 @@
 
         .inner {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+
+            .unit_plan {
+                grid-column: 1/3;
+            }
 
             .unit_slide {
-                grid-column: 2/4;
+                grid-column: 3/5;
+                
+                .u_slide {
+                    padding: 0 15px;
+
+                    img {
+                        height: 100%;
+                    }
+                }
             }
         }
     }
+}
+
+@media (max-width: 768px) {
+    
 }

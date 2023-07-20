@@ -46,3 +46,37 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    
+}
+
+@media (max-width : 768px) {
+    .footer {
+        //position: relative;
+        .inner {
+            // position: absolute;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+
+            .f_logo {
+                text-align: left;
+            }
+    
+            .f_coo {
+                ul {
+                    flex-direction: column;
+                    display: grid;
+                    grid-template-columns: repeat(2, 3fr);
+                }
+                
+            }
+    
+            .f_copy {
+                text-align: left;
+            }
+        }
+       
+    }
+}
