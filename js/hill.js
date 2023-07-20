@@ -31,8 +31,11 @@ $(function () {
     });
 
     $('.gnb').on('wheel', function (e) {
-      if ($('.gnb').hasClass('on')) {
+      if ($('.gnb .lnb').hasClass('on')) {
         e.preventDefault();
+      }
+      else {
+          e.preventDefault();
       }
     })
 
