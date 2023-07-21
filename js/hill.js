@@ -18,6 +18,10 @@ $(function () {
     // $('.gnb ul>li>a').on('click', function () {
     //   $('.gnb ul>li .lnb').toggleClass('on');
     // })
+    $('.header .gnb ul>li').on('click', function (e) {
+      $('.header .gnb::before').toggleClass('on');
+        e.preventDefault();
+    })
 
     $('.gnb ul>li .gnb_list').on('click', function (e) {
       if ($('.gnb').hasClass('on')) {

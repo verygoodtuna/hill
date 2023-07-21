@@ -269,8 +269,16 @@
                     top: 100px;
                 }
 
+                &::before.on {
+                    height: 275px;
+                }
+
                 &:hover::before {
-                    height: 230px;
+                    height: 0;
+                }
+
+                &:hover .lnb {
+                    display: none;
                 }
 
                 ul {
