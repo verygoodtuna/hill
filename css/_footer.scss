@@ -61,20 +61,25 @@
             // transform: translate(-50%, -50%);
 
             .f_logo {
-                text-align: left;
+                text-align: center;
             }
     
             .f_coo {
                 ul {
                     flex-direction: column;
-                    display: grid;
-                    grid-template-columns: repeat(2, 3fr);
+                    gap: 5px;
+                    li {
+                        font-size: 13px;
+                        font-weight: 400;
+                    }
                 }
                 
             }
     
             .f_copy {
-                text-align: left;
+                text-align: center;
+
+                
             }
         }
        

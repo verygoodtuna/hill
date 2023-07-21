@@ -120,7 +120,7 @@
                             display: none;
                             white-space: nowrap;
                             flex-direction: column;
-                            transition: 0.5s;
+                            //transition: 0.5s;
                             text-align: center;
 
                             li {
@@ -204,7 +204,6 @@
                 position: absolute;
                 top: 50%;
                 right: 6%;
-        
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -340,7 +339,7 @@
 @media (max-width: 768px) {
     .header {
         background: $color-white;
-
+        
         .inner {
 
             .gnb {
@@ -353,7 +352,7 @@
                 bottom: 0;
                 background: $color-white;
 
-                padding: 50px 20px 0 20px;
+                padding: 0 20px;
 
                 &::before {
                     width: 0;
@@ -419,12 +418,30 @@
                 &.on {
                     display: block;
                 }
+
+                .num {
+                    opacity: 0;
+                    visibility: hidden;
+    
+                    position: static;
+                    transform: translate(0, 0);
+                    
+                    padding: 15px 25px;
+                    background: $color-red;
+                    color: $color-white;
+
+                    img {
+                        color: $color-white;
+                    }
+                }
+
+                &.on .num{
+                    opacity: 1;
+                    visibility: visible;
+                }
             }
             
-            .num {
-                display: none;
-            }
-
+           
             .top_banner {
                 .banner_img {
                     display: none;

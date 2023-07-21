@@ -59,6 +59,7 @@
         }
         .premium8_slide {
             cursor: pointer;
+            min-height: 150px;
 
                 .p_slide {
                     width: 296.5px;
@@ -70,6 +71,7 @@
                     }
 
                     .txt {
+                        padding: 0 30px;
                         h3 {
                             font-size: 18px;
                             font-weight: 500;
@@ -82,6 +84,7 @@
                             font-weight: 300;
                             color: $color-white0;
                             line-height: 21px;
+                            padding: 0 10px;
                         }
                     }
                     
@@ -93,9 +96,77 @@
 }
 
 @media (max-width: 1024px) {
+    .main_premium8 {
+        padding: 100px 0;
 
+        &::before{
+            display: none;
+        }
+
+        .inner {
+            &::before {
+                left: 33.5%;
+            }
+
+            &::after {
+                right: 33.5%;
+            }
+
+            .premium8_slide {
+                .p_slide {
+                    .txt {
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
-    
+    .main_premium8 {
+        padding: 100px 0;
+
+        &::before {
+            height: 150px;
+            top: 50%;
+            display: block;
+        }
+
+        .inner {
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                display: none;
+            }
+
+            .tit {
+                margin: 0 0 50px 0;
+                p {
+                    font-size: 13px;
+                }
+
+                h2 {
+                    font-size: 40px;
+                }
+            }
+
+            .premium8_slide {
+                .p_slide {
+                    .txt {
+                        h3 {
+                            font-size: 14px;
+                        }
+
+                        p {
+                            font-size: 11px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -12,6 +12,7 @@ $(function () {
 
     $('.menu_btn').on('click', function () {
       $('.header .gnb').toggleClass('on');
+      $('.header .num').toggleClass('on');
     })
 
     // $('.gnb ul>li>a').on('click', function () {

@@ -50,6 +50,34 @@
             color: $color-dgray;
         }
     }
+
+    .scroll {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: $color-white;
+    
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    
+        text-shadow:0 0 5px #7c7c7c;
+
+        z-index: 999;
+        .mouse {
+            font-size: 22px;
+            font-weight: 300;
+            margin: 0 0 8px 0;
+        }
+
+        span {
+            font-size: 12px;
+            font-weight: 300;
+            /* margin: 0 0 5px 0; */
+        }
+    }
+    
 }
 
 @media (max-width: 1024px) {
