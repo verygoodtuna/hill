@@ -478,7 +478,7 @@ body {
   left: 50%;
   transform: translate(-50%, 0);
   text-shadow: 0 0 5px #7c7c7c;
-  z-index: 999;
+  z-index: 998;
 }
 .main_door .scroll .mouse {
   font-size: 22px;
